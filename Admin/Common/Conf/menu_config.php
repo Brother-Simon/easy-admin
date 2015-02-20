@@ -6,6 +6,7 @@ if (false === $modelMenu) {
     $modelMenu = array();
 }
 
+
 // 菜单项配置
 $systemMenu = array(
     // 后台首页

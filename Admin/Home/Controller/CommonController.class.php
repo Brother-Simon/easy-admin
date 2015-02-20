@@ -182,15 +182,15 @@ class CommonController extends Controller {
 
         // 访问权限
         $access = $_SESSION['_ACCESS_LIST'];
-        if (empty($access)) {
+        $authId = $_SESSION[C('USER_AUTH_KEY')];
+          if (empty($access)) {
             $authId = $_SESSION[C('USER_AUTH_KEY')];
             $access = \Org\Util\Rbac::getAccessList($authId);
         }
         $authGroup = strtoupper(C('GROUP_AUTH_NAME'));
-
         // 处理主菜单
         foreach ($menu as $key => $menuItem) {
-            // 不显示无权限访问的主菜单
+
             if (!$_SESSION[C('ADMIN_AUTH_KEY')]
                 && !array_key_exists(strtoupper($key), $access[$authGroup])) {
                 continue ;
@@ -207,7 +207,6 @@ class CommonController extends Controller {
                 } else {
                     $key = "{$mapping}-{$key}";
                 }
-
                 // 需要映射的键值已存在，则删除
                 if (isset($mainMenu[$mapping])) {
                     $mainMenu[$key]['name'] = $mainMenu[$mapping]['name'];
@@ -218,11 +217,9 @@ class CommonController extends Controller {
 
                 continue ;
             }
-
             $mainMenu[$key]['name'] = $menuItem['name'];
             $mainMenu[$key]['target'] = $menuItem['target'];
         }
-
         // 子菜单
         $subMenu = array();
         $ctrlName = CONTROLLER_NAME;
@@ -241,12 +238,13 @@ class CommonController extends Controller {
             $route = array_shift(array_keys($item['item']));
             $action = explode('/', strtoupper($route));
             // 不显示无权限访问的子菜单
+            /*
             if (!$_SESSION[C('ADMIN_AUTH_KEY')]
                 && (!array_key_exists($action[0], $actions)
                     || !array_key_exists($action[1], $actions[$action[0]]))) {
                 continue ;
             }
-
+            */
             // 子菜单是否有配置
             if (!isset($item['item']) || empty($item['item'])) {
                 continue ;
