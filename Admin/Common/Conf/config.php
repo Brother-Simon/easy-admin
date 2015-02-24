@@ -10,8 +10,8 @@ $appConfig =  array(
     // 'SHOW_PAGE_TRACE' =>true,
 
     // 默认模块和Action
-    'MODULE_ALLOW_LIST' => array('Home'),
-    'DEFAULT_MODULE' => 'Home',
+    'MODULE_ALLOW_LIST' => array('Home','Admin'),
+    'DEFAULT_MODULE' => array('Home','Admin'),
 
     // 默认控制器
     'DEFAULT_CONTROLLER' => 'Public',
