@@ -1,6 +1,6 @@
 <?php
 
-namespace Home\Logic;
+namespace Admin\Logic;
 
 /**
  * FieldLogic

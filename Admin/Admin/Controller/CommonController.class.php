@@ -13,7 +13,6 @@ class CommonController extends Controller {
     * @return
     */
     public function _initialize() {
-      die("admin fuck");
         // utf-8编码
         header('Content-Type: text/html; charset=utf-8');
 

@@ -11,10 +11,10 @@ $appConfig =  array(
 
     // 默认模块和Action
     'MODULE_ALLOW_LIST' => array('Home','Admin'),
-    'DEFAULT_MODULE' => array('Home','Admin'),
+    'DEFAULT_MODULE' => 'Home',
 
     // 默认控制器
-    'DEFAULT_CONTROLLER' => 'Public',
+    'DEFAULT_CONTROLLER' => 'Index',
 
     // 分页列表数
     'PAGE_LIST_ROWS' => 10,

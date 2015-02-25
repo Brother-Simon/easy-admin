@@ -6,8 +6,10 @@
  * and open the template in the editor.
  */
 namespace Home\Controller;
-class TestController extends CommonController {
+use Think\Controller;
+class TestController extends Controller {
   public function index(){
+    die("ffff");
   }
 }
 

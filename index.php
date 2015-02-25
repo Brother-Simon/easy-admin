@@ -21,7 +21,6 @@ define('WEB_ROOT', dirname(__FILE__) . '/');
 define('APP_NAME', 'Admin');
 define('APP_PATH', './Admin/');
 define('THINK_PATH', realpath('./ThinkPHP') . '/');
-
 // 运行缓存目录
 define('RUNTIME_PATH', WEB_ROOT . 'Cache/Runtime/' . APP_NAME . '/');
 

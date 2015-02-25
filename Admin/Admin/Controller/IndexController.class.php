@@ -11,7 +11,6 @@ class IndexController extends CommonController {
      * @return
      */
     public function index(){
-      die("ADMIN");
         $gd = '不支持';
         if (function_exists('gd_info')) {
             $gd = gd_info();
