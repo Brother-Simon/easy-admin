@@ -13,6 +13,7 @@ class IndexController extends Controller {
     public function index(){
       $this->assign("home_img_list",M("home_img","ea_")->field("img_url")->select());
       $this->assign("home_introduce",M("home_introduce","ea_")->field("introduce_text")->find());
+      $this->assign("produce_img",M("produce_img","ea_")->field("img_url")->select());
       $this->display();
     }
 }
