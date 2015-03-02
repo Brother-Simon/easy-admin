@@ -16,6 +16,7 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 
 // 网站文件入口位置
 define('WEB_ROOT', dirname(__FILE__) . '/');
+define('WEB_ROOT', dirname(__FILE__) . '/');
 
 // 定义应用目录
 define('APP_NAME', 'Admin');

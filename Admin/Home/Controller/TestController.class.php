@@ -9,7 +9,10 @@ namespace Home\Controller;
 use Think\Controller;
 class TestController extends Controller {
   public function index(){
-    die("ffff");
+    $this->display();
+  }
+    public function upload(){
+    $this->display();
   }
 }
 
