@@ -7,17 +7,57 @@ and open the template in the editor.
     Created on : 2015-2-28, 21:08:55
     Author     : Administrator
 */
-.home_slider .nivo-directionNav a{
-  
+body,html{
+  height: 100%;
 }
-display: block;
-width: 30px;
-height: 30px;
-background: url(arrows.png) no-repeat;
-text-indent: -9999px;
-border: 0;
-opacity: 0;
--webkit-transition: all 200ms ease-in-out;
--moz-transition: all 200ms ease-in-out;
--o-transition: all 200ms ease-in-out;
-transition: all 200ms ease-in-out;
+.bg{
+  background: url("sprite.png");
+}
+.goto_shop{
+  margin:0  auto;
+  width: 129px;
+	height: 41px;
+  background-position: -14px -17px;
+}
+.goto_shop:hover{
+  cursor: pointer;
+}
+.slider-wrapper{
+  height: 57%;
+}
+.placeholder_box_introduce{
+  height: 6.8%;
+}
+.placeholder_box_goto_shop{
+  height: 6.8%;
+}
+.introduce{
+  height: 12.1%;
+}
+.home_slider{
+  height: 100%;
+}
+.nav{
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 54px;
+  line-height: 54px;
+  background-color: #FCFBFB; 
+}
+.nav .item{
+  font-size: 12px;
+  margin: 0 18px;
+  font-weight: bold;
+}
+.nav .item:hover{
+  text-decoration: underline;
+}
+.nav .active{
+  text-decoration: underline;
+}
+.produce_img{
+  height: 100%;
+  width: 100%;
+}
