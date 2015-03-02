@@ -2,9 +2,8 @@
 <script src="__PUBLIC__/javascripts/home/jquery.nivo.slider.js"></script>
 <script>
   $(function(){
-    $("#js_home_slider").nivoSlider();
-    setTimeout(function(){
-        $("#js_home_slider img").first().attr("src","http://yue.ali/Public/stylesheets/home/arrows.png");
-    },9000);
+    $("#js_home_slider,#js_produce_slider").nivoSlider({
+      controlNav : false
+    });
   });
 </script>
