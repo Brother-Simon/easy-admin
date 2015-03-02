@@ -1,5 +1,7 @@
-    <div id="js_home_slider">
+  <div class="slider-wrapper theme-default">
+    <div id="js_home_slider" class="home_slider">
       <volist name="home_img_list" id="vo">
-        <img src={$vo.img_url|U}/>
+        <img src=/{$vo.img_url} data-thumb="thump.jpg">
       </volist>
     </div>
+  </div>
