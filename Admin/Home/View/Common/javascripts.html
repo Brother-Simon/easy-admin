@@ -61,6 +61,7 @@
       }
     });
     //动态
+    /*
     $("#js_happy_see").mousewheel(function(event,delta){
       if(delta > 0){
         $(this).fadeOut(500);
@@ -78,9 +79,10 @@
         },500)
       }
     });
-    
+   */ 
     $(".js_happy_see_item").click(function(){
-      $("#js_happ_see_model").show();
+      $("#js_happ_see_model").show().height($(document).height()).width($(document).width());
+      $("#js_happy_see").hide();
     });
     
     $("#js_us_nav,#js_produce_nav,#js_happy_nav,#js_cooeration_nav").click(function(){
@@ -89,7 +91,6 @@
       $(this).addClass("active");
       active_body.fadeOut(500);
         clearTimeout(outTime);
-        $("#js_nav a").removeClass("active").eq(3).addClass("active");
         outTime=setTimeout(function(){
           active_body = that$.fadeIn(501);
         },500)
