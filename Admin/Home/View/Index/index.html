@@ -20,9 +20,55 @@
 <div id="js_produce_img" class="produce_img">
     <volist name="produce_img" id="vo" key="key">
       <if condition="$key eq 1">
-        <img src=/{$vo.img_url} class="db" height="100%" width="100%">
+        <img src=/{$vo.img_url} class="db" width="100%">
         <else/>
-        <img src=/{$vo.img_url} class="dn" height="100%" width="100%">
+        <img src=/{$vo.img_url} class="dn" width="100%">
       </if>
     </volist>
+  <ul class="goto_shop_list">
+    <li class="item">
+      <a class="bg taobao dib"></a>
+      <a class="bg jingdong dib"></a>
+      <a class="bg yihaodian dib"></a>
+      <a class="bg qianwang dib"></a>
+    </li>
+  </ul>
+</div>
+<div class="happy_see">
+  <h5 class="happy_see_title">喜闻乐见</h5>
+  <ul class="happy_seee_list clearfix">
+    <?php dump($happy_see);?>
+    <volist name="happy_see" id="vo">
+      <li class="fl">
+        <dl class="">
+          <dt>
+            <img src="/{$vo.img_url}"/>
+          </dt>
+          <dd>
+            {$vo.title}
+          </dd>
+        </dl>
+      </li>
+    </volist>
+  </ul>
+</div>
+<div id="js_happ_see_model" class="happy_see_model db">
+  <div id="js_happ_see_model_main" class="happy_see_model_main">
+    <span class="close bg fr"></span>
+    <div class="article_main">
+      <div class="fl turn_left"></div>
+      <div class="fl contain">
+        <div class="nav_of_article fl">
+          <a>我们</a>
+          <a>产品</a>
+          <a>动态</a>
+          <a>合作</a>
+        </div>
+        
+      </div>
+      <div class="fl turn_right"></div>
+    </div>
+         
+    
+  </div>
 </div>

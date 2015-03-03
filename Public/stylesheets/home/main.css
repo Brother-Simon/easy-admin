@@ -60,4 +60,74 @@ body,html{
 .produce_img{
   height: 100%;
   width: 100%;
+  position: relative;
+}
+.goto_shop_list{
+  position: absolute;
+  top: 803px;
+  left: 134px;
+}
+.goto_shop_list li a{
+  width: 66px;
+  height: 25px;
+}
+.taobao{
+   background-position: -160px -27px;
+}
+.jingdong{
+  background-position:  -219px -28px;
+}
+.yihaodian{
+  background-position: -281px -25px;
+}
+.qianwang{
+  background-position: -281px -25px;
+}
+.happy_see_title{
+  font-size: 46px;
+  color: #286F37;
+  height: 88px;
+  font-weight: bold;
+}
+.happy_see{
+  margin-top: 125px;
+}
+.happy_seee_list{
+  width: 1578px;
+  margin: 0 auto;
+}
+.happy_seee_list img{
+  width: 370px;
+  height: 265px;
+}
+.happy_seee_list dd{
+  font-size: 14px;
+}
+.happy_seee_list li{
+  margin: 0 78px;
+  width: 370px;
+  height: 345px;
+}
+.happy_see_model{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #F5F5F5;
+}
+.happy_see_model .close {
+  background-position: -27px -146px;
+  width: 58px;
+	height: 59px;
+}
+.article_main{
+  width: 1752px;
+}
+.nav_of_article{
+  height: 108px;
+  background-color: #FFFFFF;
+  line-height: 108px;
+  text-indent: 45px;
+}
+.nav_of_article a{
+  margin:0 10px;
 }
