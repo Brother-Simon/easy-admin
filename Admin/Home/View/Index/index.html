@@ -1,24 +1,26 @@
-<!--
-<div class="slider-wrapper theme-default">
-  <div id="js_home_slider" class="home_slider">
-    <volist name="home_img_list" id="vo">
-      <img src=/{$vo.img_url} data-thumb=/{$vo.img_url} height="100%">
-    </volist>
+<div id="js_main_body" class="main_body">
+  <div class="slider-wrapper theme-default">
+    <div id="js_home_slider" class="home_slider">
+      <volist name="home_img_list" id="vo">
+        <img src=/{$vo.img_url} data-thumb=/{$vo.img_url} height="100%">
+      </volist>
+    </div>
   </div>
+  <div class="placeholder_box_introduce"></div>
+  <div class="introduce">
+    {$home_introduce["introduce_text"]}
+  </div>
+  <div class="placeholder_box_goto_shop"></div>
+  <a class="goto_shop bg db" href=""></a>
 </div>
-<div class="placeholder_box_introduce"></div>
-<div class="introduce">
-  {$home_introduce["introduce_text"]}
+<div id="js_nav" class="nav">
+  <a id="js_us_nav" class="item active" href="javascript:void(0)">我们</a>
+  <a id="js_produce_nav" class="item" href="javascript:void(0)">产品</a>
+  <a id="js_happy_nav" class="item" href="javascript:void(0)">动态</a>
+  <a id="js_cooeration_nav" class="item" href="javascript:void(0)">合作</a>
 </div>
-<div class="placeholder_box_goto_shop"></div>
-<a class="goto_shop bg db" href=""></a>
-<div class="nav">
-  <a class="item active" href="">我们</a>
-  <a class="item" href="">产品</a>
-  <a class="item" href="">动态</a>
-  <a class="item" href="">合作</a>
-</div>
-<div id="js_produce_img" class="produce_img">
+
+<div id="js_produce_img" class="produce_img dn">
     <volist name="produce_img" id="vo" key="key">
       <if condition="$key eq 1">
         <img src=/{$vo.img_url} class="db" width="100%">
@@ -35,12 +37,11 @@
     </li>
   </ul>
 </div>
-<div class="happy_see">
+<div id="js_happy_see" class="happy_see dn">
   <h5 class="happy_see_title">喜闻乐见</h5>
   <ul class="happy_seee_list clearfix">
-    <?php dump($happy_see);?>
     <volist name="happy_see" id="vo">
-      <li class="fl">
+      <li class="fl js_happy_see_item">
         <dl class="">
           <dt>
             <img src="/{$vo.img_url}"/>
@@ -53,8 +54,7 @@
     </volist>
   </ul>
 </div>
-
-<div id="js_happ_see_model" class="happy_see_model db">
+<div id="js_happ_see_model" class="happy_see_model dn">
   <div id="js_happ_see_model_main" class="happy_see_model_main">
     <span class="close bg fr"></span>
     <div class="article_main clearfix">
@@ -98,8 +98,7 @@
   </ul>
   </div>
 </div>
--->
-<div class="cooperation">
+<div id="js_cooperation" class="cooperation dn">
   <img src="/${cooperation.img_url}" width="100%"/>
   <div class="cooperation_download fl bg"></div>
   <div class="contact fl">

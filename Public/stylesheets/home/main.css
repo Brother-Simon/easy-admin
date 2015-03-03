@@ -10,6 +10,9 @@ and open the template in the editor.
 body,html{
   height: 100%;
 }
+.main_body{
+  height: 100%;
+}
 .bg{
   background: url("sprite.png");
 }
@@ -45,17 +48,23 @@ body,html{
   height: 54px;
   line-height: 54px;
   background-color: #FCFBFB; 
+  z-index: 99999;
+  /*opacity: 0.5;*/
 }
 .nav .item{
-  font-size: 12px;
-  margin: 0 18px;
-  font-weight: bold;
+  font-size: 18px;
+  margin: 0 40px;
+  font-weight: 500;
+  padding-bottom: 3px;
+  color: black;
+  outline:none; 
+  hide-focus: expression(this.hideFocus=true);  
 }
 .nav .item:hover{
-  text-decoration: underline;
+  border-bottom: 1px solid black;
 }
 .nav .active{
-  text-decoration: underline;
+  border-bottom: 1px solid black;
 }
 .produce_img{
   height: 100%;
@@ -88,9 +97,13 @@ body,html{
   color: #286F37;
   height: 88px;
   font-weight: bold;
+  padding-top:125px;
+  margin-left: 78px;
 }
 .happy_see{
-  margin-top: 125px;
+  margin: 0 auto;
+  width: 1578px;
+  height: 100%;
 }
 .happy_seee_list{
   width: 1578px;
@@ -101,12 +114,16 @@ body,html{
   height: 265px;
 }
 .happy_seee_list dd{
-  font-size: 14px;
+  font-size: 15px;
+  color: #595757;
 }
 .happy_seee_list li{
   margin: 0 78px;
   width: 370px;
   height: 345px;
+}
+.happy_seee_list li:hover{
+  cursor: pointer;
 }
 .happy_see_model{
   height: 100%;
