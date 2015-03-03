@@ -15,6 +15,7 @@ class IndexController extends Controller {
       $this->assign("home_introduce",M("home_introduce","ea_")->field("introduce_text")->find());
       $this->assign("produce_img",M("produce_img","ea_")->field("img_url")->select());
       $this->assign("happy_see",M("happy_see","ea_")->field("title,img_url")->select());
+      $this->assign("happy_article",M("happy_article","ea_")->field("context,img_url")->find());
       $this->display();
     }
 }

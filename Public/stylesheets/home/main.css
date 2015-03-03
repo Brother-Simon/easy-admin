@@ -120,14 +120,180 @@ body,html{
 	height: 59px;
 }
 .article_main{
-  width: 1752px;
+  width: 1616px;
+  margin: 178px auto;
 }
-.nav_of_article{
+.happy_see_model_main .header{
   height: 108px;
   background-color: #FFFFFF;
+}
+.nav_of_article{
   line-height: 108px;
   text-indent: 45px;
 }
 .nav_of_article a{
   margin:0 10px;
+}
+.qqweibo{
+  background-position:-133px -75px;
+}
+.weixin{
+  background-position: -162px -75px;
+}
+.xinlang{
+  background-position:-190px -75px;
+}
+.share_happy{
+  width: 235px;
+  height: 108px;
+  line-height: 108px;
+}
+.share_happy .text{
+  margin-right: 10px;
+  font-size: 18px;
+  color: #595757;
+  vertical-align: middle;
+}
+.share_happy .icon{
+  margin: 0 10px;
+  width: 23px;
+	height: 22px;
+  vertical-align: middle;
+}
+.turn_left{
+  background-position: -138px -119px;
+  width: 172px;
+	height: 111px;
+}
+.turn_right{
+  background-position: -269px -120px;
+  width: 172px;
+	height: 111px;
+}
+.article_main .contain{
+  width: 1276px;
+}
+.happy_img{
+  width: 100%;
+}
+.happy_context{
+  height: 415px;
+  overflow: hidden;
+}
+.more_news{
+  margin: 60px auto;
+  width : 1616px;
+}
+.more_news .title{
+  font-size: 21px;
+  height: 50px;
+  line-height: 50px;
+  border: 0 none;
+  border-bottom: 2px dashed #5D5D5D;
+  margin: 0 97px 40px;
+}
+.cooperation_download{
+
+}
+.contact{
+  font-size: 30px;
+  margin-top: 42px;
+  height: 50px;
+  font-weight: bold;
+}
+.cooperation .name{
+  background-color: #EDEDED;
+  width: 340px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 10px;
+  color: #595757;
+  margin-bottom: 12px;
+}
+.cooperation .name span{
+  margin-left: 10px;
+  color: #595757;
+}
+.cooperation .name input{
+  border: 0 none;
+  height: 28px;
+  line-height: 28px;
+  background-color: #EDEDED;
+  font-size: 10px;
+}
+.cooperation .textarea{
+  width: 324px;
+  height: 130px;
+  background-color: #EDEDED;
+  resize: none;
+  font-size: 10px;
+  color: #595757;
+  border: 0 none;
+  padding: 8px;
+}
+.cooperation_download{
+  background-position: -454px -20px;
+  width: 118px;
+	height: 32px;
+}
+.cooperation_goto_shop{
+  background-position : -255px -64px;
+  width: 139px;
+	height: 44px;
+  margin-top: 154px;
+  margin-left: 133px;
+}
+.cooperation_download{
+  margin-top: 305px;
+  margin-left: 150px;
+  margin-right: 195px;
+}
+.address{
+  margin-top: 56px;
+  border: 0 none;
+  width: 400px;
+  height: 230px;
+  margin-left: 70px;
+}
+.address li{
+  border-bottom: 2px solid #595757;
+  height: 56px;
+  line-height: 56px;
+}
+.address .icon{
+  width: 26px;
+	height: 26px;
+  vertical-align: middle;
+}
+.add_icon{
+  background-position:  -410px -72px;
+}
+.tel_icon{
+  background-position:  -453px -73px;
+}
+.emal_icon{
+  background-position: -493px -73px;
+}
+.address .text{
+  font-size: 16px;
+  color: #595757;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-left: 7px;
+}
+.address .share{
+  margin-top: 38px;
+  border: 0 none;
+  height: 25px;
+  line-height: 25px;
+}
+.address .share .icon{
+  width: 23px;
+	height: 22px;
+}
+.cooperation .send{
+  background-position: -15px -73px;
+  width: 77px;
+	height: 25px;
+  margin-top: 17px;
 }

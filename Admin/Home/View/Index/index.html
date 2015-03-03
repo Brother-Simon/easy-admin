@@ -1,3 +1,4 @@
+<!--
 <div class="slider-wrapper theme-default">
   <div id="js_home_slider" class="home_slider">
     <volist name="home_img_list" id="vo">
@@ -52,23 +53,86 @@
     </volist>
   </ul>
 </div>
+
 <div id="js_happ_see_model" class="happy_see_model db">
   <div id="js_happ_see_model_main" class="happy_see_model_main">
     <span class="close bg fr"></span>
-    <div class="article_main">
-      <div class="fl turn_left"></div>
+    <div class="article_main clearfix">
+      <div class="fl turn_left bg"></div>
       <div class="fl contain">
-        <div class="nav_of_article fl">
-          <a>我们</a>
-          <a>产品</a>
-          <a>动态</a>
-          <a>合作</a>
+        <div class="header clearfix">
+          <div class="nav_of_article fl">
+            <a>我们</a>
+            <a>产品</a>
+            <a>动态</a>
+            <a>合作</a>
+          </div>
+          <div class="share_happy fr">
+            <span class="text">分享</span>
+            <span class="icon qqweibo bg dib"></span>
+            <span class="icon weixin bg dib"></span>
+            <span class="icon xinlang bg dib"></span>
+          </div>
         </div>
-        
+        <img class="happy_img" src="/{$happy_article.img_url}"/>
+        <p class="happy_context">{$happy_article.context}</p>
       </div>
       <div class="fl turn_right"></div>
     </div>
-         
-    
   </div>
+  <div class="more_news">
+    <h5 class="title">更多动态</h5>
+    <ul class="happy_seee_list clearfix">
+    <volist name="happy_see" id="vo">
+      <li class="fl">
+        <dl class="">
+          <dt>
+            <img src="/{$vo.img_url}"/>
+          </dt>
+          <dd>
+            {$vo.title}
+          </dd>
+        </dl>
+      </li>
+    </volist>
+  </ul>
+  </div>
+</div>
+-->
+<div class="cooperation">
+  <img src="/${cooperation.img_url}" width="100%"/>
+  <div class="cooperation_download fl bg"></div>
+  <div class="contact fl">
+    <h5 class="title fm_yahei fl clearfix">━ Contact Us</h5>
+    <span class="db name cb">
+      <span>姓名</span>
+      <input placeholder="NAME*"/>
+    </span>
+    <span class="db name">
+      <span>邮箱</span>
+      <input placeholder="EMAIL*"/>
+    </span>
+    <textarea class="textarea db" placeholder="Write down what you want......"></textarea>
+    <a class="fr send bg"></a>
+  </div>
+  <ul class="address fl">
+    <li class="clearfix">
+      <span class="add_icon icon bg dib"></span>
+      <span class="text">广州南沙环市大道南25号</span>
+    </li>
+    <li class="clearfix">
+      <span class="tel_icon icon bg dib"></span>
+      <span class="text">+98 451224 5456</span>
+    </li>
+    <li class="clearfix">
+      <span class="emal_icon icon bg dib"></span>
+      <span class="text">mahuan1768@126.com</span>
+    </li>
+    <li class="clearfix share">
+      <span class="icon qqweibo bg dib"></span>
+      <span class="icon weixin bg dib"></span>
+      <span class="icon xinlang bg dib"></span>
+    </li>
+  </ul>
+  <a class="cooperation_goto_shop fl bg"></a>
 </div>
