@@ -11,7 +11,7 @@
     {$home_introduce["introduce_text"]}
   </div>
   <div class="placeholder_box_goto_shop"></div>
-  <a class="goto_shop bg db" href=""></a>
+  <a class="goto_shop bg db" href="{$shop.main_shop}"  target="_blank"></a>
 </div>
 <div id="js_nav" class="nav">
   <a id="js_us_nav" class="item active" href="javascript:void(0)" rel="js_main_body">我们</a>
@@ -21,21 +21,27 @@
 </div>
 
 <div id="js_produce_img" class="produce_img dn">
+    <ul id="produce_img_list" class="produce_img_list">
     <volist name="produce_img" id="vo" key="key">
-      <if condition="$key eq 1">
-        <img src=/{$vo.img_url} class="db" width="100%">
-        <else/>
-        <img src=/{$vo.img_url} class="dn" width="100%">
-      </if>
-    </volist>
-  <ul class="goto_shop_list">
-    <li class="item">
-      <a class="bg taobao dib"></a>
-      <a class="bg jingdong dib"></a>
-      <a class="bg yihaodian dib"></a>
-      <a class="bg qianwang dib"></a>
-    </li>
-  </ul>
+          <li  class="db fl produce_item">
+            <img src=/{$vo.img_url} width="100%">
+            <ul class="goto_shop_list list_order_{$key}">
+              <li class="item fl">
+                <a class="bg taobao dib" href="{$shop.taobao}"  target="_blank"></a>
+              </li>
+              <li class="item fl">
+                <a class="bg jingdong dib" href="{$shop.jingdong}"  target="_blank"></a>
+              </li>
+              <li class="item fl">
+                <a class="bg yihaodian dib" href="{$shop.yihaodian}"  target="_blank"></a>
+              </li>
+              <li class="item fl">
+                <a class="bg qianwang dib" href="{$shop.main_shop}"  target="_blank"></a>
+              </li>
+            </ul>
+          </li>
+      </volist>
+    </ul>
 </div>
 <div id="js_happy_see" class="happy_see dn">
   <h5 class="happy_see_title">喜闻乐见</h5>
@@ -75,7 +81,7 @@
           </div>
         </div>
         <img class="happy_img" src="/{$happy_article.img_url}"/>
-        <p class="happy_context">{$happy_article.context}</p>
+        <div class="happy_context">{$happy_article.context}</div>
       </div>
       <div class="fl turn_right"></div>
     </div>
@@ -99,8 +105,8 @@
   </div>
 </div>
 <div id="js_cooperation" class="cooperation dn">
-  <img src="/${cooperation.img_url}" width="100%"/>
-  <div class="cooperation_download fl bg"></div>
+  <img src="/{$cooperation.cooperation_img}" width="100%"/>
+  <a class="cooperation_download fl bg" href="{$cooperation.cooperation_detail}" target="_blank"></a>
   <div class="contact fl">
     <h5 class="title fm_yahei fl clearfix">━ Contact Us</h5>
     <span class="db name cb">
@@ -117,15 +123,15 @@
   <ul class="address fl">
     <li class="clearfix">
       <span class="add_icon icon bg dib"></span>
-      <span class="text">广州南沙环市大道南25号</span>
+      <span class="text">{$cooperation.addr}</span>
     </li>
     <li class="clearfix">
       <span class="tel_icon icon bg dib"></span>
-      <span class="text">+98 451224 5456</span>
+      <span class="text">{$cooperation.tel}</span>
     </li>
     <li class="clearfix">
       <span class="emal_icon icon bg dib"></span>
-      <span class="text">mahuan1768@126.com</span>
+      <span class="text">{$cooperation.email}</span>
     </li>
     <li class="clearfix share">
       <span class="icon qqweibo bg dib"></span>
@@ -133,5 +139,5 @@
       <span class="icon xinlang bg dib"></span>
     </li>
   </ul>
-  <a class="cooperation_goto_shop fl bg"></a>
+  <a class="cooperation_goto_shop fl bg" href="{$shop.main_shop}" target="_blank"></a>
 </div>

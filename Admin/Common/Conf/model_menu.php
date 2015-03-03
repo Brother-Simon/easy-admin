@@ -120,4 +120,64 @@ return array (
       ),
     ),
   ),
+  'Shop' => 
+  array (
+    'name' => '商城管理管理',
+    'target' => 'Shop/index',
+    'sub_menu' => 
+    array (
+      0 => 
+      array (
+        'item' => 
+        array (
+          'Shop/index' => '商城管理管理',
+        ),
+      ),
+      1 => 
+      array (
+        'item' => 
+        array (
+          'Shop/add' => '添加商城管理',
+        ),
+      ),
+      2 => 
+      array (
+        'item' => 
+        array (
+          'Shop/edit' => '编辑商城管理',
+        ),
+        'hidden' => true,
+      ),
+    ),
+  ),
+  'Cooperation' => 
+  array (
+    'name' => '合作细则管理',
+    'target' => 'Cooperation/index',
+    'sub_menu' => 
+    array (
+      0 => 
+      array (
+        'item' => 
+        array (
+          'Cooperation/index' => '合作细则管理',
+        ),
+      ),
+      1 => 
+      array (
+        'item' => 
+        array (
+          'Cooperation/add' => '添加合作细则',
+        ),
+      ),
+      2 => 
+      array (
+        'item' => 
+        array (
+          'Cooperation/edit' => '编辑合作细则',
+        ),
+        'hidden' => true,
+      ),
+    ),
+  ),
 );

@@ -70,15 +70,31 @@ body,html{
   height: 100%;
   width: 100%;
   position: relative;
+  overflow: hidden;
+}
+.produce_item{
+  width: 10%;
+}
+.produce_img_list{
+  width: 1000%;
 }
 .goto_shop_list{
   position: absolute;
+}
+.list_order_1{
+  top: 803px;
+  left: 134px;
+}
+.list_order_2{
   top: 803px;
   left: 134px;
 }
 .goto_shop_list li a{
   width: 66px;
   height: 25px;
+}
+.goto_shop_list li .qianwang{
+  width: 78px;
 }
 .taobao{
    background-position: -160px -27px;
@@ -90,7 +106,7 @@ body,html{
   background-position: -281px -25px;
 }
 .qianwang{
-  background-position: -281px -25px;
+  background-position: -348px -25px;
 }
 .happy_see_title{
   font-size: 46px;

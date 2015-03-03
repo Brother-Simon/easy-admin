@@ -30,6 +30,9 @@
     $("#js_home_slider").nivoSlider({
       controlNav : false
     });
+    $("#js_home_slider img").each(function(){
+      $(this).height($(this).height());
+    });
     $("#js_main_body").mousewheel(function(event,delta){
       if(delta < 0){
         $(this).fadeOut(500);
@@ -40,7 +43,18 @@
         $("#js_nav").animate({bottom: $(window).height()-54},1000);
       }
     })
-    
+    //
+
+    function scroll_animate(){
+      $("#produce_img_list").animate({marginLeft:"-=100%"},10000,"swing",function(){
+        $("#produce_img_list").append($("#produce_img_list li").eq(0).detach());
+        $("#produce_img_list").css("marginLeft","0");
+      });
+      setTimeout(function(){
+        scroll_animate();
+      },15000);
+    }
+    scroll_animate();
     //产品
     $("#js_produce_img").mousewheel(function(event,delta){
       if(delta > 0){
@@ -61,7 +75,6 @@
       }
     });
     //动态
-    /*
     $("#js_happy_see").mousewheel(function(event,delta){
       if(delta > 0){
         $(this).fadeOut(500);
@@ -70,18 +83,10 @@
           active_body = $("#js_produce_img").fadeIn(500);
         },500)
         $("#js_nav a").removeClass("active").eq(1).addClass("active");
-      }else{
-        $(this).fadeOut(500);
-        clearTimeout(outTime);
-        $("#js_nav a").removeClass("active").eq(3).addClass("active");
-        outTime=setTimeout(function(){
-          active_body = $("#js_cooperation").fadeIn(501);
-        },500)
       }
     });
-   */ 
     $(".js_happy_see_item").click(function(){
-      $("#js_happ_see_model").show().height($(document).height()).width($(document).width());
+      active_body = $("#js_happ_see_model").show().height($(document).height()).width($(document).width());
       $("#js_happy_see").hide();
     });
     
@@ -92,7 +97,7 @@
       active_body.fadeOut(500);
         clearTimeout(outTime);
         outTime=setTimeout(function(){
-          active_body = that$.fadeIn(501);
+          active_body = that$.fadeIn(500);
         },500)
     });
   });
