@@ -93,8 +93,14 @@
     });
     */
     $(".js_happy_see_item").click(function(){
-      active_body = $("#js_happ_see_model").show().height($(document).height()+1000).width($(document).width());
-      $("#js_happ_see_model_main").css("marginTop",($("body").scrollTop()+200)+"px");
+      var id = $(this).attr("ref_id");
+      $("#js_happ_see_model").attr("ref_id",id);
+      $.post("/index/get_artcile/id/"+id,{},function(json){
+        $("#js_happy_img").attr("src",json.img_url);
+        $("#js_happy_content").append(json.content);
+        active_body = $("#js_happ_see_model").show().height($(document).height()+1000);
+        $("#js_happ_see_model_main").css("marginTop",($("body").scrollTop()+200)+"px");
+        },"json");
     });
     $("#js_happy_close").click(function(){
       $("#js_happ_see_model").fadeOut(100);
@@ -143,6 +149,41 @@
         });
         active_nav("js_us_nav");
       }
+    });
+    $(".js_turn").click(function(){
+      var id = parseInt($("#js_happ_see_model").attr("ref_id"));
+      if($(this).attr("dec") == "right"){
+        id += 1;
+      }else{
+        id -= 1;
+      }
+      $("#js_happ_see_model").attr("ref_id",id);
+      $.post('http://yue.ali/index/get_artcile/id/'+id,{},function(json){
+        if(json.status == "success"){
+          $("#js_happy_img").attr("src",json.img_url);
+          $("#js_happy_content").append(json.content);
+        }else{
+          alert("没有文章了!");
+        }
+
+      },"json");
+    });
+    $("#js_send").click(function(){
+      if($("#js_name").val() == ""){
+        alert("姓名不能为空!");
+        return ;
+      }
+      if($("#js_email").val() == ""){
+        alert("邮箱不能为空！");
+        return ;
+      }
+      $.post("/index/save_contact",{
+        "name" : $("#js_name").val(),
+        "email" : $("#js_email").val(),
+        "content" : $("#js_content").val()
+      },function(json){
+        console.log(json);
+      },"json");
     });
   });
 </script>

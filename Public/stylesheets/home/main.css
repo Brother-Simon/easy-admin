@@ -159,7 +159,7 @@ and open the template in the editor.
     cursor: pointer;
   }
   .article_main{
-    width: 1621px;
+    width: 1750px;
     margin: 178px auto;
   }
   .happy_see_model_main .header{
@@ -186,6 +186,7 @@ and open the template in the editor.
     width: 235px;
     height: 108px;
     line-height: 108px;
+    position:relative;
   }
   .share_happy .text{
     margin-right: 10px;
@@ -207,14 +208,17 @@ and open the template in the editor.
     margin-top: 375px;
   }
   .turn_right{
-    background-position: -269px -120px;
+    background-position: -241px -120px;
     width: 85px;
     height: 111px;
     margin-left: 87px;
     margin-top: 375px;
   }
+  .turn_right:hover{
+    cursor: pointer;
+  }
   .article_main .contain{
-    width: 1621px;
+    width: 1400px;
   }
   .happy_img{
     width: 100%;
@@ -222,7 +226,8 @@ and open the template in the editor.
   .happy_context{
     height: 415px;
     overflow: hidden;
-    background-color: #FFFFFF;d
+    background-color: #FFFFFF;
+    padding: 30px 60px;
   }
   .more_news{ 
     margin: 60px auto;
@@ -240,7 +245,6 @@ and open the template in the editor.
 
   }
   .cooperation{
-    height: 100%;
   }
   .contact{
     font-size: 30px;
@@ -292,12 +296,13 @@ and open the template in the editor.
     width: 139px;
   	height: 44px;
     margin-top: 154px;
-    margin-left: 133px;
+    margin-left:  8.4%;
   }
   .cooperation_download{
     margin-top: 305px;
-    margin-left: 150px;
-    margin-right: 195px;
+    margin-left: 8%;
+    margin-right: 10.6%;
+  }
   }
   .address{
     margin-top: 56px;
@@ -338,6 +343,13 @@ and open the template in the editor.
     height: 25px;
     line-height: 25px;
     position:relative;
+  }
+    .share_happy .jiathis_style{
+    top: 41px;
+    left: 60px;
+  }
+  .share_happy .share_jia{
+    width: 117px;
   }
   .jiathis_style{
     position: absolute;
