@@ -1,3 +1,5 @@
+<a id="top" name="top"></a>
+<a id="main_body" name="main_body"></a>
 <div id="js_main_body" class="main_body">
   <div class="slider-wrapper theme-default">
     <div id="js_home_slider" class="home_slider">
@@ -14,12 +16,12 @@
   <a class="goto_shop bg db" href="{$shop.main_shop}"  target="_blank"></a>
 </div>
     <div id="js_nav" class="nav">
-      <a id="js_us_nav" class="item active" href="javascript:void(0)" rel="js_main_body">我们</a>
-      <a id="js_produce_nav" class="item" href="javascript:void(0)" rel="js_produce_img">产品</a>
-      <a id="js_happy_nav" class="item" href="javascript:void(0)" rel="js_happy_see">动态</a>
-      <a id="js_cooeration_nav" class="item" href="javascript:void(0)" rel="js_cooperation">合作</a>
+      <a id="js_us_nav" class="item active" href="#main_body" rel="js_main_body">我们</a>
+      <a id="js_produce_nav" class="item" href="#produce_img" rel="js_produce_img">产品</a>
+      <a id="js_happy_nav" class="item" href="#happy_see" rel="js_happy_see">动态</a>
+      <a id="js_cooeration_nav" class="item" href="#cooperation" rel="js_cooperation">合作</a>
     </div>
-
+<a id="produce_img" name="produce_img"></a>
 <div id="js_produce_img" class="produce_img">
     <if condition="$produce_show_type.show_type eq 'video' ">
       <embed src="{$produce_show_type.video_url}" allowFullScreen="true" quality="high" width="600" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" style="position:absolute;top: 104px;left:50%;margin-left: -300px;"></embed>
@@ -47,8 +49,8 @@
       </volist>
     </ul>
   </if>
-    
 </div>
+<a id="happy_see" name="happy_see"></a>
 <div id="js_happy_see" class="happy_see">
   <h5 class="happy_see_title">喜闻乐见</h5>
   <ul class="happy_seee_list clearfix">
@@ -65,8 +67,10 @@
       </li>
     </volist>
   </ul>
+  <div class="happy_more_wrap">
+    <a id="js_happy_more" class="fr cb bg happy_more"></a>
+  </div>
 </div>
-
 <div id="js_happ_see_model" class="happy_see_model dn">
   <div id="js_happ_see_model_main" class="happy_see_model_main">
     <a id="js_happy_close" class="close bg fr"></a>
@@ -120,6 +124,7 @@
   </ul>
   </div>
 </div>
+<a id="cooperation" name="cooperation"></a>
 <div id="js_cooperation" class="cooperation">
   <img src="/{$cooperation.cooperation_img}" width="100%"/>
   <a class="cooperation_download fl bg" href="{$cooperation.cooperation_detail}" target="_blank"></a>
@@ -168,3 +173,4 @@
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
 <!-- JiaThis Button END -->
+<a href="#top" class="db bg goto_top cb"></a>

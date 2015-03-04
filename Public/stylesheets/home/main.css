@@ -44,13 +44,13 @@ and open the template in the editor.
   .nav{
     text-align: center;
     width: 100%;
-    height: 54px;
-    line-height: 54px;
+    height: 5%;
+    line-height: 40px;
     background-color: #FCFBFB; 
     z-index: 99999;
     position: relative;
     z-index: 99999;
-    /*opacity: 0.5;*/
+    background: rgba(255,255,255, 0.5);
   }
   .nav .item{
     font-size: 18px;
@@ -245,6 +245,7 @@ and open the template in the editor.
 
   }
   .cooperation{
+    height: 100%;
   }
   .contact{
     font-size: 30px;
@@ -368,5 +369,29 @@ and open the template in the editor.
     width: 77px;
   	height: 25px;
     margin-top: 17px;
+  }
+  .cooperation .send:hover{
+    cursor: pointer;
+  }
+  .goto_top{
+    width: 63px;
+    height: 63px;
+    background-position: -529px -60px;
+    position: fixed;
+    bottom: 83px;
+    right: 80px;
+  }
+  .happy_more_wrap{
+    width: 990px;
+    margin: 0 auto;
+  }
+  #js_happy_more{
+    background-position: -391px -150px;
+    width: 139px;
+    height: 44px;
+    margin-right: 29px;
+  }
+  #js_happy_more:hover{
+    cursor: pointer;
   }
 }

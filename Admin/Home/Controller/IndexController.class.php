@@ -35,7 +35,8 @@ class IndexController extends Controller {
       $data["name"] = I("param.name","");
       $data["email"] = I("post.email","");
       $data["content"] = I("post.content","");
-      
-      $this->ajaxReturn($data);
+      $Contact = M("contact","ea_");
+      $result = $Contact ->data($data)->add();
+      $this->ajaxReturn(array("status"=>"success"));
     }
 }
