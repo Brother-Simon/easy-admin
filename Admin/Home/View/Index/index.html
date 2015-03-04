@@ -63,9 +63,9 @@
 </div>
 <div id="js_happ_see_model" class="happy_see_model dn">
   <div id="js_happ_see_model_main" class="happy_see_model_main">
-    <span class="close bg fr"></span>
+    <a id="js_happy_close" class="close bg fr"></a>
     <div class="article_main clearfix">
-      <div class="fl turn_left bg"></div>
+      <div id="js_turn_left" class="fl turn_left bg"></div>
       <div class="fl contain">
         <div class="header clearfix">
           <div class="nav_of_article fl">
@@ -84,7 +84,7 @@
         <img class="happy_img" src="/{$happy_article.img_url}"/>
         <div class="happy_context">{$happy_article.context}</div>
       </div>
-      <div class="fl turn_right bg"></div>
+      <div id="js_turn_right" class="fl turn_right bg"></div>
     </div>
   </div>
   <div class="more_news">
@@ -138,7 +138,26 @@
       <span class="icon qqweibo bg dib"></span>
       <span class="icon weixin bg dib"></span>
       <span class="icon xinlang bg dib"></span>
-    </li>
+      <div class="jiathis_style">
+          <span class="jiathis_txt"></span>
+          <a class=""></a>
+          <a class=""></a>
+          <a class=""></a>
+          <a class=""></a>
+          <a href="http://www.jiathis.com/share" class="jiathis share_jia jiathis_txt jtico_jiathis" target="_blank"></a>
+        </div>
+       </li>
   </ul>
   <a class="cooperation_goto_shop fl bg" href="{$shop.main_shop}" target="_blank"></a>
 </div>
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <span class="jiathis_txt"></span>
+  <a class=""></a>
+  <a class=""></a>
+  <a class=""></a>
+  <a class=""></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico_jiathis" target="_blank"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->

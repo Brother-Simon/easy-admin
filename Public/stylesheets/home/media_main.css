@@ -1,14 +1,8 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 2015-2-28, 21:08:55
-    Author     : Administrator
-*/
-@media (min-width:1366px) { 
-  body,html{
+@media (max-width:1366px) { 
+  body {
+    background-color: grey;
+  }
+    body,html{
     height: 100%;
   }
   .main_body{
@@ -20,7 +14,7 @@ and open the template in the editor.
   .goto_shop{
     margin:0  auto;
     width: 129px;
-  	height: 41px;
+    height: 41px;
     background-position: -14px -17px;
   }
   .goto_shop:hover{
@@ -82,11 +76,11 @@ and open the template in the editor.
     position: absolute;
   }
   .list_order_1{
-    top: 803px;
+    top: 508px;
     left: 134px;
   }
   .list_order_2{
-    top: 803px;
+    top: 508px;
     left: 134px;
   }
   .goto_shop_list li a{
@@ -122,21 +116,21 @@ and open the template in the editor.
     height: 100%;
   }
   .happy_seee_list{
-    width: 1578px;
+    width: 990px;
     margin: 0 auto;
   }
   .happy_seee_list img{
-    width: 370px;
-    height: 265px;
+    width: 265px;
+    height: 190px;
   }
   .happy_seee_list dd{
     font-size: 15px;
     color: #595757;
   }
   .happy_seee_list li{
-    margin: 0 78px;
-    width: 370px;
-    height: 345px;
+    margin: 0 29px;
+    width: 265px;
+    height: 234px;
   }
   .happy_seee_list li:hover{
     cursor: pointer;
@@ -152,7 +146,7 @@ and open the template in the editor.
   .happy_see_model .close {
     background-position: -27px -146px;
     width: 58px;
-  	height: 59px;
+    height: 59px;
     margin-top: -126px;
   }
   .happy_see_model .close:hover{
@@ -196,7 +190,7 @@ and open the template in the editor.
   .share_happy .icon{
     margin: 0 10px;
     width: 23px;
-  	height: 22px;
+    height: 22px;
     vertical-align: middle;
   }
   .turn_left{
@@ -264,8 +258,8 @@ and open the template in the editor.
   }
   .cooperation .name input{
     border: 0 none;
-    height: 28px;
-    line-height: 28px;
+    height: 30px;
+    line-height: 30px;
     background-color: #EDEDED;
     font-size: 10px;
     outline: 0;
@@ -285,12 +279,12 @@ and open the template in the editor.
   .cooperation_download{
     background-position: -454px -20px;
     width: 118px;
-  	height: 32px;
+    height: 32px;
   }
   .cooperation_goto_shop{
     background-position : -255px -64px;
     width: 139px;
-  	height: 44px;
+    height: 44px;
     margin-top: 154px;
     margin-left: 133px;
   }
@@ -313,7 +307,7 @@ and open the template in the editor.
   }
   .address .icon{
     width: 26px;
-  	height: 26px;
+    height: 26px;
     vertical-align: middle;
   }
   .add_icon{
@@ -349,12 +343,12 @@ and open the template in the editor.
   }
   .address .share .icon{
     width: 23px;
-  	height: 22px;
+    height: 22px;
   }
   .cooperation .send{
     background-position: -15px -73px;
     width: 77px;
-  	height: 25px;
+    height: 25px;
     margin-top: 17px;
   }
 }
