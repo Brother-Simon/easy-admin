@@ -13,14 +13,15 @@
   <div class="placeholder_box_goto_shop"></div>
   <a class="goto_shop bg db" href="{$shop.main_shop}"  target="_blank"></a>
 </div>
-<div id="js_nav" class="nav">
-  <a id="js_us_nav" class="item active" href="javascript:void(0)" rel="js_main_body">我们</a>
-  <a id="js_produce_nav" class="item" href="javascript:void(0)" rel="js_produce_img">产品</a>
-  <a id="js_happy_nav" class="item" href="javascript:void(0)" rel="js_happy_see">动态</a>
-  <a id="js_cooeration_nav" class="item" href="javascript:void(0)" rel="js_cooperation">合作</a>
-</div>
+    <div id="js_nav" class="nav">
+      <a id="js_us_nav" class="item active" href="javascript:void(0)" rel="js_main_body">我们</a>
+      <a id="js_produce_nav" class="item" href="javascript:void(0)" rel="js_produce_img">产品</a>
+      <a id="js_happy_nav" class="item" href="javascript:void(0)" rel="js_happy_see">动态</a>
+      <a id="js_cooeration_nav" class="item" href="javascript:void(0)" rel="js_cooperation">合作</a>
+    </div>
 
-<div id="js_produce_img" class="produce_img dn">
+<div id="js_produce_img" class="produce_img">
+
     <ul id="produce_img_list" class="produce_img_list">
     <volist name="produce_img" id="vo" key="key">
           <li  class="db fl produce_item">
@@ -43,7 +44,7 @@
       </volist>
     </ul>
 </div>
-<div id="js_happy_see" class="happy_see dn">
+<div id="js_happy_see" class="happy_see">
   <h5 class="happy_see_title">喜闻乐见</h5>
   <ul class="happy_seee_list clearfix">
     <volist name="happy_see" id="vo">
@@ -83,7 +84,7 @@
         <img class="happy_img" src="/{$happy_article.img_url}"/>
         <div class="happy_context">{$happy_article.context}</div>
       </div>
-      <div class="fl turn_right"></div>
+      <div class="fl turn_right bg"></div>
     </div>
   </div>
   <div class="more_news">
@@ -104,7 +105,7 @@
   </ul>
   </div>
 </div>
-<div id="js_cooperation" class="cooperation dn">
+<div id="js_cooperation" class="cooperation">
   <img src="/{$cooperation.cooperation_img}" width="100%"/>
   <a class="cooperation_download fl bg" href="{$cooperation.cooperation_detail}" target="_blank"></a>
   <div class="contact fl">

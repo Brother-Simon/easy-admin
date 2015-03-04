@@ -26,6 +26,8 @@
     });
   };
   $(function(){
+    var WINDOW_HEIGHT = $(window).height();
+    var NAV_HEIGHT = WINDOW_HEIGHT*0.05;
     var outTime,active_body=$("#js_main_body");
     $("#js_home_slider").nivoSlider({
       controlNav : false
@@ -35,12 +37,15 @@
     });
     $("#js_main_body").mousewheel(function(event,delta){
       if(delta < 0){
+        $("#js_nav").css("")
+    /*
         $(this).fadeOut(500);
         outTime =setTimeout(function(){
           active_body = $("#js_produce_img").fadeIn(500);
         },500)
         $("#js_nav a").removeClass("active").eq(1).addClass("active");
         $("#js_nav").animate({bottom: $(window).height()-54},1000);
+    */
       }
     })
     //
@@ -56,6 +61,7 @@
     }
     scroll_animate();
     //产品
+    /*
     $("#js_produce_img").mousewheel(function(event,delta){
       if(delta > 0){
         $(this).fadeOut(500);
@@ -85,6 +91,7 @@
         $("#js_nav a").removeClass("active").eq(1).addClass("active");
       }
     });
+    */
     $(".js_happy_see_item").click(function(){
       active_body = $("#js_happ_see_model").show().height($(document).height()).width($(document).width());
       $("#js_happy_see").hide();
@@ -99,6 +106,39 @@
         outTime=setTimeout(function(){
           active_body = that$.fadeIn(500);
         },500)
+    });
+    function active_nav(id){
+      $("#js_nav a").removeClass("active");
+      $("#"+id).addClass("active");
+    }
+    //样式计算
+    $("#js_produce_img").css("top","-"+NAV_HEIGHT+"px");
+    $("body").mousewheel(function(){
+      var that$ = $(this);
+      SCROLL_TOP = that$.scrollTop();
+      if(SCROLL_TOP > WINDOW_HEIGHT - NAV_HEIGHT){
+         $("#js_nav").css({
+           "position" : "fixed",
+           "top" : "0"
+         });
+         if(SCROLL_TOP < WINDOW_HEIGHT*2){
+           active_nav("js_produce_nav");
+           return ;
+         }
+         if(SCROLL_TOP < WINDOW_HEIGHT*3){
+           active_nav("js_happy_nav");
+           return ;
+         }
+         if(SCROLL_TOP < WINDOW_HEIGHT*4){
+           active_nav("js_cooeration_nav");
+           return ;
+         }
+      }else{
+        $("#js_nav").css({
+           "position" : "relative"
+        });
+        active_nav("js_us_nav");
+      }
     });
   });
 </script>

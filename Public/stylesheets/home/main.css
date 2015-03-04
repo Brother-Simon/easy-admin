@@ -11,7 +11,7 @@ body,html{
   height: 100%;
 }
 .main_body{
-  height: 100%;
+  height: 95%;
 }
 .bg{
   background: url("sprite.png");
@@ -42,13 +42,13 @@ body,html{
 }
 .nav{
   text-align: center;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  height: 54px;
+  height: 5%;
   line-height: 54px;
   background-color: #FCFBFB; 
   z-index: 99999;
+  position: relative;
+  z-index: 999999;
   /*opacity: 0.5;*/
 }
 .nav .item{
@@ -151,9 +151,10 @@ body,html{
   background-position: -27px -146px;
   width: 58px;
 	height: 59px;
+  margin-top: -126px;
 }
 .article_main{
-  width: 1616px;
+  width: 1621px;
   margin: 178px auto;
 }
 .happy_see_model_main .header{
@@ -195,13 +196,17 @@ body,html{
 }
 .turn_left{
   background-position: -138px -119px;
-  width: 172px;
-	height: 111px;
+  width: 85px;
+  height: 111px;
+  margin-right: 87px;
+  margin-top: 375px;
 }
 .turn_right{
   background-position: -269px -120px;
-  width: 172px;
-	height: 111px;
+  width: 85px;
+  height: 111px;
+  margin-left: 87px;
+  margin-top: 375px;
 }
 .article_main .contain{
   width: 1276px;
