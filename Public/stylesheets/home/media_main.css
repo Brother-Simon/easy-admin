@@ -384,3 +384,17 @@
     right: 80px;
   }
 }
+@media (max-width:1080px) { 
+  .article_main .contain {
+    width: 770px;
+  }
+  .turn_left{
+    margin-right: 32px;
+  }
+  .turn_right{
+    margin-left: 32px;
+  }
+  .list_order_2,.list_order_1{
+    top: 450px;
+  }
+}
