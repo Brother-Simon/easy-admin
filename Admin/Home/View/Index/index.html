@@ -29,7 +29,7 @@
     <ul id="produce_img_list" class="produce_img_list">
     <volist name="produce_img" id="vo" key="key">
           <li  class="db fl produce_item">
-            <img src=/{$vo.img_url} width="100%">
+            <img data-original=/{$vo.img_url} width="100%">
             <ul class="goto_shop_list list_order_{$key}">
               <li class="item fl">
                 <a class="bg taobao dib" href="{$shop.taobao}"  target="_blank"></a>
@@ -57,7 +57,7 @@
       <li class="fl js_happy_see_item" ref_id={$vo.id}>
         <dl class="">
           <dt>
-            <img src="/{$vo.img_url}"/>
+            <img data-original="/{$vo.img_url}"/>
           </dt>
           <dd>
             {$vo.title}
@@ -98,7 +98,7 @@
             </div>
           </div>
         </div>
-        <img id="js_happy_img" class="happy_img" src="/{$happy_article.img_url}"/>
+        <img id="js_happy_img" class="happy_img" data-original="/{$happy_article.img_url}"/>
         <div id="js_happy_content" class="happy_context">{$happy_article.context}</div>
       </div>
       <div id="js_turn_right" class="fl turn_right bg js_turn" dec="right"></div>
@@ -112,7 +112,7 @@
       <li class="fl js_happy_see_item" ref_id={$vo.id}>
         <dl class="">
           <dt>
-            <img src="/{$vo.img_url}"/>
+            <img data-original="/{$vo.img_url}"/>
           </dt>
           <dd>
             {$vo.title}
@@ -125,7 +125,7 @@
 </div>
 <a id="cooperation" name="cooperation"></a>
 <div id="js_cooperation" class="cooperation">
-  <img src="/{$cooperation.cooperation_img}" width="100%"/>
+  <img data-original="/{$cooperation.cooperation_img}" width="100%"/>
   <a class="cooperation_download fl bg" href="{$cooperation.cooperation_detail}" target="_blank"></a>
   <div class="contact fl">
     <h5 class="title fm_yahei fl clearfix">━ Contact Us</h5>
