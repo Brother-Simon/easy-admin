@@ -4,7 +4,7 @@
   <div class="slider-wrapper theme-default">
     <div id="js_home_slider" class="home_slider">
       <volist name="home_img_list" id="vo">
-        <img src=/{$vo.img_url} data-thumb=/{$vo.img_url} height="100%">
+        <img src=/{$vo.img_url} data-thumb=/{$vo.img_url}>
       </volist>
     </div>
   </div>
@@ -24,8 +24,7 @@
 <a id="produce_img" name="produce_img"></a>
 <div id="js_produce_img" class="produce_img">
     <if condition="$produce_show_type.show_type eq 'video' ">
-      <embed src="{$produce_show_type.video_url}" allowFullScreen="true" quality="high" width="600" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" style="position:absolute;top: 104px;left:50%;margin-left: -300px;"></embed>
-      <img src=/{$produce_show_type.img_bg} width="100%">
+      <embed src="{$produce_show_type.video_url}" allowFullScreen="true" quality="high" width="1200" height="800" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" style="position:absolute;top: 104px;left:50%;margin-left: -600px;z-index:99"></embed>
       <else/>
     <ul id="produce_img_list" class="produce_img_list">
     <volist name="produce_img" id="vo" key="key">
@@ -79,10 +78,10 @@
       <div class="fl contain">
         <div class="header clearfix">
           <div class="nav_of_article fl">
-            <a>我们</a>
-            <a>产品</a>
-            <a>动态</a>
-            <a>合作</a>
+            <a href="#main_body" class="item js_happy_close">我们</a>
+            <a href="#produce_img" class="item js_happy_close">产品</a>
+            <a href="#happy_see" class="item js_happy_close">动态</a>
+            <a href="#cooperation" class="item js_happy_close">合作</a>
           </div>
           <div class="share_happy fr">
             <span class="text">分享</span>

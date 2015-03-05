@@ -99,15 +99,16 @@
         $("#js_happy_img").attr("src",json.img_url);
         $("#js_happy_content").append(json.content);
         active_body = $("#js_happ_see_model").show().height($(document).height()+1000);
-        $("#js_happ_see_model_main").css("marginTop",($("body").scrollTop()+200)+"px");
+        $("#js_happ_see_model_main").css("marginTop",($(window).scrollTop()+200)+"px");
         },"json");
     });
-    $("#js_happy_close").click(function(){
+    $("#js_happy_close , .js_happy_close").click(function(){
       $("#js_happ_see_model").fadeOut(100);
     });
     $("#js_us_nav,#js_produce_nav,#js_happy_nav,#js_cooeration_nav").click(function(){
       $("#js_nav a").removeClass("active");
       $(this).addClass("active");
+      $("body").mousemove();
     });
     function active_nav(id){
       $("#js_nav a").removeClass("active");
@@ -116,7 +117,7 @@
     //样式计算
     $("#js_produce_img").css("top","-"+NAV_HEIGHT+"px");
     $("body").mousewheel(function(){
-      var that$ = $(this);
+      var that$ = $(window); 
       SCROLL_TOP = that$.scrollTop();
       if(SCROLL_TOP > WINDOW_HEIGHT - NAV_HEIGHT){
          $("#js_nav").css({
