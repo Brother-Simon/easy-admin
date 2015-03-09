@@ -162,6 +162,9 @@
     height: 108px;
     background-color: #FFFFFF;
   }
+    .happy_see_model_main{
+    overflow: hidden;
+    }
   .nav_of_article{
     line-height: 108px;
     text-indent: 45px;

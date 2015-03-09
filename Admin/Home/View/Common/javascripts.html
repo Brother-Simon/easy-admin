@@ -53,7 +53,7 @@
     //
 
     function scroll_animate(){
-      $("#produce_img_list").animate({marginLeft:"-=100%"},10000,"swing",function(){
+      $("#produce_img_list").animate({marginLeft:"-=100%"},1000,"swing",function(){
         $("#produce_img_list").append($("#produce_img_list li").eq(0).detach());
         $("#produce_img_list").css("marginLeft","0");
       });
