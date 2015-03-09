@@ -144,7 +144,7 @@ and open the template in the editor.
     height: 88px;
     font-weight: bold;
     padding-top:125px;
-    margin-left: 78px;
+    margin-left: 3%;
   }
   .happy_see{
     margin: 0 auto;
@@ -161,11 +161,11 @@ and open the template in the editor.
   .happy_seee_list dd{
     font-size: 15px;
     color: #595757;
+	height: 60px;
   }
   .happy_seee_list li{
     margin: 0 3%;
     width: 27%;
-    height: 345px;
   }
   .happy_seee_list li:hover{
     cursor: pointer;
