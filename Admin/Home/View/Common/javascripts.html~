@@ -32,7 +32,7 @@
     var NAV_HEIGHT = WINDOW_HEIGHT*0.05;
     var outTime,active_body=$("#js_main_body");
     $("#js_home_slider").nivoSlider({
-      controlNav : false
+      controlNav : true
     });
     $("#js_home_slider img").each(function(){
       $(this).height($(this).height());
