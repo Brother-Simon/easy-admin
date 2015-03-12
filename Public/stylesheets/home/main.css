@@ -144,7 +144,7 @@ and open the template in the editor.
     height: 88px;
     font-weight: bold;
     padding-top:125px;
-    margin-left: 78px;
+    margin-left: 3%;
   }
   .happy_see{
     margin: 0 auto;
@@ -156,17 +156,16 @@ and open the template in the editor.
     margin: 0 auto;
   }
   .happy_seee_list img{
-    width: 370px;
-    height: 265px;
+    width: 100%;
   }
   .happy_seee_list dd{
     font-size: 15px;
     color: #595757;
+	height: 60px;
   }
   .happy_seee_list li{
-    margin: 0 78px;
-    width: 370px;
-    height: 345px;
+    margin: 0 3%;
+    width: 27%;
   }
   .happy_seee_list li:hover{
     cursor: pointer;
@@ -195,6 +194,9 @@ and open the template in the editor.
   .happy_see_model_main .header{
     height: 108px;
     background-color: #FFFFFF;
+  }
+  .happy_see_model_main{
+    overflow: hidden;
   }
   .nav_of_article{
     line-height: 108px;
@@ -327,7 +329,7 @@ and open the template in the editor.
     width: 139px;
   	height: 44px;
     margin-top: 154px;
-    margin-left:  8.4%;
+    margin-right:  3%;
   }
   .cooperation_download{
     margin-top: 305px;
@@ -412,16 +414,22 @@ and open the template in the editor.
     right: 80px;
   }
   .happy_more_wrap{
-    width: 990px;
+    width: 1578px;
     margin: 0 auto;
   }
   #js_happy_more{
     background-position: -391px -150px;
     width: 139px;
     height: 44px;
-    margin-right: 29px;
+    margin-right: 3%;
   }
   #js_happy_more:hover{
     cursor: pointer;
+  }
+  .home_slider img{
+  }
+  .cooper_main{
+    width: 1578px;
+    margin: 0 auto;
   }
 }

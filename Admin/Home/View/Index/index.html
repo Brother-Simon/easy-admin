@@ -4,13 +4,13 @@
   <div class="slider-wrapper theme-default">
     <div id="js_home_slider" class="home_slider">
       <volist name="home_img_list" id="vo">
-        <img src=/{$vo.img_url} data-thumb=/{$vo.img_url}>
+        <img src=/{$vo.img_url} data-thumb=/{$vo.img_url} width="100%" height="100%">
       </volist>
     </div>
   </div>
   <div class="placeholder_box_introduce"></div>
   <div class="introduce">
-    {$home_introduce["introduce_text"]}
+    {$home_introd["introduce_text"]}
   </div>
   <div class="placeholder_box_goto_shop"></div>
   <a class="goto_shop bg db" href="{$shop.main_shop}"  target="_blank"></a>
@@ -126,48 +126,50 @@
 <a id="cooperation" name="cooperation"></a>
 <div id="js_cooperation" class="cooperation">
   <img data-original="/{$cooperation.cooperation_img}" width="100%"/>
-  <a class="cooperation_download fl bg" href="{$cooperation.cooperation_detail}" target="_blank"></a>
-  <div class="contact fl">
-    <h5 class="title fm_yahei fl clearfix">━ Contact Us</h5>
-    <span class="db name cb">
-      <span>姓名</span>
-      <input placeholder="NAME*" id="js_name"/>
-    </span>
-    <span class="db name">
-      <span>邮箱</span>
-      <input placeholder="EMAIL*" id="js_email"/>
-    </span>
-    <textarea class="textarea db" id="js_content" placeholder="Write down what you want......"></textarea>
-    <a id="js_send" class="fr send bg"></a>
+  <div class="cooper_main clearfix">
+    <a class="cooperation_download fl bg" href="{$cooperation.cooperation_detail}" target="_blank"></a>
+    <div class="contact fl">
+      <h5 class="title fm_yahei fl clearfix">━ Contact Us</h5>
+      <span class="db name cb">
+        <span>姓名</span>
+        <input placeholder="NAME*" id="js_name"/>
+      </span>
+      <span class="db name">
+        <span>邮箱</span>
+        <input placeholder="EMAIL*" id="js_email"/>
+      </span>
+      <textarea class="textarea db" id="js_content" placeholder="Write down what you want......"></textarea>
+      <a id="js_send" class="fr send bg"></a>
+    </div>
+    <ul class="address fl">
+      <li class="clearfix">
+        <span class="add_icon icon bg dib"></span>
+        <span class="text">{$cooperation.addr}</span>
+      </li>
+      <li class="clearfix">
+        <span class="tel_icon icon bg dib"></span>
+        <span class="text">{$cooperation.tel}</span>
+      </li>
+      <li class="clearfix">
+        <span class="emal_icon icon bg dib"></span>
+        <span class="text">{$cooperation.email}</span>
+      </li>
+      <li class="clearfix share">
+        <span class="icon qqweibo bg dib"></span>
+        <span class="icon weixin bg dib"></span>
+        <span class="icon xinlang bg dib"></span>
+        <div class="jiathis_style">
+            <span class="jiathis_txt"></span>
+            <a class=""></a>
+            <a class=""></a>
+            <a class=""></a>
+            <a class=""></a>
+            <a href="http://www.jiathis.com/share" class="jiathis share_jia jiathis_txt jtico_jiathis" target="_blank"></a>
+          </div>
+         </li>
+    </ul>
+    <a class="cooperation_goto_shop fr bg" href="{$shop.main_shop}" target="_blank"></a>
   </div>
-  <ul class="address fl">
-    <li class="clearfix">
-      <span class="add_icon icon bg dib"></span>
-      <span class="text">{$cooperation.addr}</span>
-    </li>
-    <li class="clearfix">
-      <span class="tel_icon icon bg dib"></span>
-      <span class="text">{$cooperation.tel}</span>
-    </li>
-    <li class="clearfix">
-      <span class="emal_icon icon bg dib"></span>
-      <span class="text">{$cooperation.email}</span>
-    </li>
-    <li class="clearfix share">
-      <span class="icon qqweibo bg dib"></span>
-      <span class="icon weixin bg dib"></span>
-      <span class="icon xinlang bg dib"></span>
-      <div class="jiathis_style">
-          <span class="jiathis_txt"></span>
-          <a class=""></a>
-          <a class=""></a>
-          <a class=""></a>
-          <a class=""></a>
-          <a href="http://www.jiathis.com/share" class="jiathis share_jia jiathis_txt jtico_jiathis" target="_blank"></a>
-        </div>
-       </li>
-  </ul>
-  <a class="cooperation_goto_shop fl bg" href="{$shop.main_shop}" target="_blank"></a>
 </div>
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>

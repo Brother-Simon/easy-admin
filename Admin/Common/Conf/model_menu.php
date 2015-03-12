@@ -240,4 +240,34 @@ return array (
       ),
     ),
   ),
+  'HomeIntrod' => 
+  array (
+    'name' => '首页简介管理',
+    'target' => 'HomeIntrod/index',
+    'sub_menu' => 
+    array (
+      0 => 
+      array (
+        'item' => 
+        array (
+          'HomeIntrod/index' => '首页简介管理',
+        ),
+      ),
+      1 => 
+      array (
+        'item' => 
+        array (
+          'HomeIntrod/add' => '添加首页简介',
+        ),
+      ),
+      2 => 
+      array (
+        'item' => 
+        array (
+          'HomeIntrod/edit' => '编辑首页简介',
+        ),
+        'hidden' => true,
+      ),
+    ),
+  ),
 );
