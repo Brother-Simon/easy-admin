@@ -270,4 +270,34 @@ return array (
       ),
     ),
   ),
+  'WapHome' => 
+  array (
+    'name' => '手机首页管理',
+    'target' => 'WapHome/index',
+    'sub_menu' => 
+    array (
+      0 => 
+      array (
+        'item' => 
+        array (
+          'WapHome/index' => '手机首页管理',
+        ),
+      ),
+      1 => 
+      array (
+        'item' => 
+        array (
+          'WapHome/add' => '添加手机首页',
+        ),
+      ),
+      2 => 
+      array (
+        'item' => 
+        array (
+          'WapHome/edit' => '编辑手机首页',
+        ),
+        'hidden' => true,
+      ),
+    ),
+  ),
 );

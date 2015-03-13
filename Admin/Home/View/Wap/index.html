@@ -15,9 +15,14 @@
   </head>
   <body class="fm_yahei">
     <div id="js_main" class="main">
-      <section class="bg_red page1">ddddddddd</section>
-      <section class="bg_blue page2">aaaaaaaaaaaaaaaaaaa</section>
-      <section class="bg_yellow page3">fdfffffffffffffffffff</section>
+      <volist name="wap_home" id="item">
+        <section class="common_section">
+          <img src=/{$item.img_url}>
+          <div class="text_introduce">
+            {$item.text_introduce}
+          </div>
+        </section>
+      </volist>
     </div>
   </body>
 </html>

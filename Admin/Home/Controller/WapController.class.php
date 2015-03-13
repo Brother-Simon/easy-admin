@@ -9,6 +9,7 @@ namespace Home\Controller;
 use Think\Controller;
 class WapController extends Controller {
   public function index(){
+    $this->assign("wap_home",M("wap_home","ea_")->field()->select());
     $this->display();
   }
     public function upload(){
