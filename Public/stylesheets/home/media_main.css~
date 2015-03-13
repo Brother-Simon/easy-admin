@@ -1,15 +1,8 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 2015-2-28, 21:08:55
-    Author     : Administrator
-*/
-@media (max-width:2366px) { 
-  body,html{
-    /*height: 100%;*/
+@media (max-width:1366px) { 
+  body {
+  }
+    body,html{
+    height: 100%;
   }
   .main_body{
     height: 95%;
@@ -20,7 +13,7 @@ and open the template in the editor.
   .goto_shop{
     margin:0  auto;
     width: 129px;
-  	height: 41px;
+    height: 41px;
     background-position: -14px -17px;
   }
   .goto_shop:hover{
@@ -29,20 +22,11 @@ and open the template in the editor.
   .slider-wrapper{
     height: 57%;
   }
-  .placeholder_box_introduce{
-    height: 4.8%;
-  }
   .placeholder_box_goto_shop{
     height: 6.8%;
   }
-  .introduce{
-    height: 14.1%;
-  }
   .home_slider{
     height: 100%;
-  }
-  .home_slider img{
-    height
   }
   .nav{
     text-align: center;
@@ -54,6 +38,7 @@ and open the template in the editor.
     position: relative;
     z-index: 99999;
     background: rgba(255,255,255, 0.5);
+    /*opacity: 0.5;*/
   }
   .nav .item{
     font-size: 18px;
@@ -67,32 +52,6 @@ and open the template in the editor.
   .nav .item:hover{
     border-bottom: 1px solid black;
   }
-  .nav_of_article{
-    text-align: left;
-    width: 100%;
-    height: 5%;
-    line-height: 40px;
-    background-color: #FCFBFB; 
-    z-index: 99999;
-    position: relative;
-    z-index: 99999;
-    background: rgba(255,255,255, 0.5);
-  }
-  .nav_of_article .item{
-    font-size: 18px;
-    margin: 0 10px;
-    font-weight: 500;
-    padding-bottom: 3px;
-    color: black;
-    outline:none; 
-    hide-focus: expression(this.hideFocus=true);  
-  }
-  .nav_of_article .item:hover{
-    border-bottom: 1px solid black;
-  }
-  .nav_of_article .active{
-    border-bottom: 1px solid black;
-  }
   .nav .active{
     border-bottom: 1px solid black;
   }
@@ -100,7 +59,6 @@ and open the template in the editor.
     width: 100%;
     position: relative;
     overflow: hidden;
-    height: 800px;
   }
   .produce_item{
     width: 10%;
@@ -112,11 +70,11 @@ and open the template in the editor.
     position: absolute;
   }
   .list_order_1{
-    top: 803px;
+    top: 508px;
     left: 134px;
   }
   .list_order_2{
-    top: 803px;
+    top: 508px;
     left: 134px;
   }
   .goto_shop_list li a{
@@ -144,28 +102,31 @@ and open the template in the editor.
     height: 88px;
     font-weight: bold;
     padding-top:125px;
+    text-indent: 29px;
+    width: 990px;
     margin-left: 3%;
-  }
+}
   .happy_see{
     margin: 0 auto;
-    width: 1578px;
+    width: 100%;
     height: 100%;
   }
   .happy_seee_list{
-    width: 1578px;
+    width: 990px;
     margin: 0 auto;
   }
   .happy_seee_list img{
-    width: 100%;
+    width: 265px;
+    height: 190px;
   }
   .happy_seee_list dd{
     font-size: 15px;
     color: #595757;
-	height: 60px;
   }
   .happy_seee_list li{
-    margin: 0 3%;
-    width: 27%;
+    margin: 0 29px;
+    width: 265px;
+    height: 234px;
   }
   .happy_seee_list li:hover{
     cursor: pointer;
@@ -181,22 +142,22 @@ and open the template in the editor.
   .happy_see_model .close {
     background-position: -27px -146px;
     width: 58px;
-  	height: 59px;
+    height: 59px;
   }
   .happy_see_model .close:hover{
     cursor: pointer;
   }
   .article_main{
-    width: 1750px;
+    width: 1241px;
     margin: 178px auto;
   }
   .happy_see_model_main .header{
     height: 108px;
     background-color: #FFFFFF;
   }
-  .happy_see_model_main{
+    .happy_see_model_main{
     overflow: hidden;
-  }
+    }
   .nav_of_article{
     line-height: 108px;
     text-indent: 45px;
@@ -217,7 +178,14 @@ and open the template in the editor.
     width: 235px;
     height: 108px;
     line-height: 108px;
-    position:relative;
+    position: relative;
+  }
+  .share_happy .jiathis_style{
+    top: 41px;
+    left: 60px;
+  }
+  .share_happy .share_jia{
+    width: 117px;
   }
   .share_happy .text{
     margin-right: 10px;
@@ -228,7 +196,7 @@ and open the template in the editor.
   .share_happy .icon{
     margin: 0 10px;
     width: 23px;
-  	height: 22px;
+    height: 22px;
     vertical-align: middle;
   }
   .turn_left{
@@ -239,7 +207,7 @@ and open the template in the editor.
     margin-top: 375px;
   }
   .turn_right{
-    background-position: -241px -120px;
+    background-position: -242px -120px;
     width: 85px;
     height: 111px;
     margin-left: 87px;
@@ -249,7 +217,7 @@ and open the template in the editor.
     cursor: pointer;
   }
   .article_main .contain{
-    width: 1400px;
+    width: 896px;
   }
   .happy_img{
     width: 100%;
@@ -262,15 +230,22 @@ and open the template in the editor.
   }
   .more_news{ 
     margin: 60px auto;
-    width : 1616px;
+    width : 100%;
   }
   .more_news .title{ 
-    font-size: 21px;
-    height: 50px;
-    line-height: 50px;
-    border: 0 none;
-    border-bottom: 2px dashed #5D5D5D;
-    margin: 0 97px 40px;
+  font-size: 21px;
+  height: 50px;
+  line-height: 50px;
+  border: 0 none;
+  margin: 0 auto;
+  width: 990px;
+  text-indent: 30px;
+  }
+  .news_hr{
+  border-top: 2px dashed #5D5D5D;
+  width: 932px;
+  margin: 0 auto;
+  height: 40px;
   }
   .cooperation_download{
 
@@ -300,8 +275,8 @@ and open the template in the editor.
   }
   .cooperation .name input{
     border: 0 none;
-    height: 28px;
-    line-height: 28px;
+    height: 30px;
+    line-height: 30px;
     background-color: #EDEDED;
     font-size: 10px;
     outline: 0;
@@ -321,20 +296,19 @@ and open the template in the editor.
   .cooperation_download{
     background-position: -454px -20px;
     width: 118px;
-  	height: 32px;
+    height: 32px;
   }
   .cooperation_goto_shop{
     background-position : -255px -64px;
     width: 139px;
-  	height: 44px;
+    height: 44px;
     margin-top: 154px;
-    margin-right:  3%;
+    margin-left:  4.4%;
   }
   .cooperation_download{
     margin-top: 305px;
-    margin-left: 8%;
-    margin-right: 10.6%;
-  }
+    margin-left: 2%;
+    margin-right: 4.6%;
   }
   .address{
     margin-top: 56px;
@@ -350,7 +324,7 @@ and open the template in the editor.
   }
   .address .icon{
     width: 26px;
-  	height: 26px;
+    height: 26px;
     vertical-align: middle;
   }
   .add_icon{
@@ -376,13 +350,6 @@ and open the template in the editor.
     line-height: 25px;
     position:relative;
   }
-    .share_happy .jiathis_style{
-    top: 41px;
-    left: 60px;
-  }
-  .share_happy .share_jia{
-    width: 117px;
-  }
   .jiathis_style{
     position: absolute;
     top: 0;
@@ -393,18 +360,18 @@ and open the template in the editor.
   }
   .address .share .icon{
     width: 23px;
-  	height: 22px;
+    height: 22px;
   }
   .cooperation .send{
     background-position: -15px -73px;
     width: 77px;
-  	height: 25px;
+    height: 25px;
     margin-top: 17px;
   }
-  .cooperation .send:hover{
+   .cooperation .send:hover{
     cursor: pointer;
-  }
-  .goto_top{
+   }
+   .goto_top{
     width: 63px;
     height: 63px;
     background-position: -529px -60px;
@@ -412,24 +379,18 @@ and open the template in the editor.
     bottom: 83px;
     right: 80px;
   }
-  .happy_more_wrap{
-    width: 1578px;
-    margin: 0 auto;
+}
+@media (max-width:1080px) { 
+  .article_main .contain {
+    width: 770px;
   }
-  #js_happy_more{
-    background-position: -391px -150px;
-    width: 139px;
-    height: 44px;
-    margin-right: 3%;
+  .turn_left{
+    margin-right: 32px;
   }
-  #js_happy_more:hover{
-    cursor: pointer;
+  .turn_right{
+    margin-left: 32px;
   }
-  .home_slider img{
-  }
-  .cooper_main{
-    width: 1578px;
-    margin: 0 auto;
-    padding-bottom: 60px;
+  .list_order_2,.list_order_1{
+    top: 450px;
   }
 }

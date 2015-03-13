@@ -19,10 +19,6 @@ $appConfig =  array(
     // 分页列表数
     'PAGE_LIST_ROWS' => 10,
 
-    // 开启布局
-    'LAYOUT_ON' => true,
-    'LAYOUT_NAME' => 'Common/layout',
-
     // error，success跳转页面
     'TMPL_ACTION_ERROR' => 'Common:dispatch_jump',
     'TMPL_ACTION_SUCCESS' => 'Common:dispatch_jump',

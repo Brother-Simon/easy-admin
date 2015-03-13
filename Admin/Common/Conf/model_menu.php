@@ -180,4 +180,94 @@ return array (
       ),
     ),
   ),
+  'ProduceShowType' => 
+  array (
+    'name' => '产品展示方式管理',
+    'target' => 'ProduceShowType/index',
+    'sub_menu' => 
+    array (
+      0 => 
+      array (
+        'item' => 
+        array (
+          'ProduceShowType/index' => '产品展示方式管理',
+        ),
+      ),
+      1 => 
+      array (
+        'item' => 
+        array (
+          'ProduceShowType/add' => '添加产品展示方式',
+        ),
+      ),
+      2 => 
+      array (
+        'item' => 
+        array (
+          'ProduceShowType/edit' => '编辑产品展示方式',
+        ),
+        'hidden' => true,
+      ),
+    ),
+  ),
+  'Contact' => 
+  array (
+    'name' => '留言管理管理',
+    'target' => 'Contact/index',
+    'sub_menu' => 
+    array (
+      0 => 
+      array (
+        'item' => 
+        array (
+          'Contact/index' => '留言管理管理',
+        ),
+      ),
+      1 => 
+      array (
+        'item' => 
+        array (
+          'Contact/add' => '添加留言管理',
+        ),
+      ),
+      2 => 
+      array (
+        'item' => 
+        array (
+          'Contact/edit' => '编辑留言管理',
+        ),
+        'hidden' => true,
+      ),
+    ),
+  ),
+  'HomeIntrod' => 
+  array (
+    'name' => '首页简介管理',
+    'target' => 'HomeIntrod/index',
+    'sub_menu' => 
+    array (
+      0 => 
+      array (
+        'item' => 
+        array (
+          'HomeIntrod/index' => '首页简介管理',
+        ),
+      ),
+      1 => 
+      array (
+        'item' => 
+        array (
+          'HomeIntrod/add' => '添加首页简介',
+        ),
+      ),
+      2 => 
+      array (
+        'item' => 
+        array (
+          'HomeIntrod/edit' => '编辑首页简介',
+        ),
+        'hidden' => true,
+      ),
+    ),
+  ),
 );
