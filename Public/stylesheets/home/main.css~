@@ -7,7 +7,7 @@ and open the template in the editor.
     Created on : 2015-2-28, 21:08:55
     Author     : Administrator
 */
-@media (max-width:2366px) { 
+@media (max-width:1366px) { 
   body,html{
     /*height: 100%;*/
   }

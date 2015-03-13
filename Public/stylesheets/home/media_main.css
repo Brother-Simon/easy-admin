@@ -22,14 +22,8 @@
   .slider-wrapper{
     height: 57%;
   }
-  .placeholder_box_introduce{
-    height: 6.8%;
-  }
   .placeholder_box_goto_shop{
-    height: 6.8%;
-  }
-  .introduce{
-    height: 12.1%;
+    height: 11.8%;
   }
   .home_slider{
     height: 100%;
@@ -149,7 +143,6 @@
     background-position: -27px -146px;
     width: 58px;
     height: 59px;
-    margin-top: -126px;
   }
   .happy_see_model .close:hover{
     cursor: pointer;
