@@ -300,4 +300,124 @@ return array (
       ),
     ),
   ),
+  'WapAbout' => 
+  array (
+    'name' => '手机关于管理',
+    'target' => 'WapAbout/index',
+    'sub_menu' => 
+    array (
+      0 => 
+      array (
+        'item' => 
+        array (
+          'WapAbout/index' => '手机关于管理',
+        ),
+      ),
+      1 => 
+      array (
+        'item' => 
+        array (
+          'WapAbout/add' => '添加手机关于',
+        ),
+      ),
+      2 => 
+      array (
+        'item' => 
+        array (
+          'WapAbout/edit' => '编辑手机关于',
+        ),
+        'hidden' => true,
+      ),
+    ),
+  ),
+  'WapTrend' => 
+  array (
+    'name' => '手机动态管理',
+    'target' => 'WapTrend/index',
+    'sub_menu' => 
+    array (
+      0 => 
+      array (
+        'item' => 
+        array (
+          'WapTrend/index' => '手机动态管理',
+        ),
+      ),
+      1 => 
+      array (
+        'item' => 
+        array (
+          'WapTrend/add' => '添加手机动态',
+        ),
+      ),
+      2 => 
+      array (
+        'item' => 
+        array (
+          'WapTrend/edit' => '编辑手机动态',
+        ),
+        'hidden' => true,
+      ),
+    ),
+  ),
+  'WapTrendArticle' => 
+  array (
+    'name' => '手机动态文章管理',
+    'target' => 'WapTrendArticle/index',
+    'sub_menu' => 
+    array (
+      0 => 
+      array (
+        'item' => 
+        array (
+          'WapTrendArticle/index' => '手机动态文章管理',
+        ),
+      ),
+      1 => 
+      array (
+        'item' => 
+        array (
+          'WapTrendArticle/add' => '添加手机动态文章',
+        ),
+      ),
+      2 => 
+      array (
+        'item' => 
+        array (
+          'WapTrendArticle/edit' => '编辑手机动态文章',
+        ),
+        'hidden' => true,
+      ),
+    ),
+  ),
+  'TrendText' => 
+  array (
+    'name' => '手机动态文字管理',
+    'target' => 'TrendText/index',
+    'sub_menu' => 
+    array (
+      0 => 
+      array (
+        'item' => 
+        array (
+          'TrendText/index' => '手机动态文字管理',
+        ),
+      ),
+      1 => 
+      array (
+        'item' => 
+        array (
+          'TrendText/add' => '添加手机动态文字',
+        ),
+      ),
+      2 => 
+      array (
+        'item' => 
+        array (
+          'TrendText/edit' => '编辑手机动态文字',
+        ),
+        'hidden' => true,
+      ),
+    ),
+  ),
 );

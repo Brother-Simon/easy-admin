@@ -2,7 +2,7 @@
 <html lang="zh-CN">
   <head>
       <meta charset="utf-8">
-      <title>做到！</title>
+      <title>下午好，奶茶</title>
       <meta name="keywords" content="下午好，奶茶" />
       <meta name="description" content="下午好，奶茶">
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -14,16 +14,141 @@
       <script src="__PUBLIC__/javascripts/home/wap.js"></script>
   </head>
   <body class="fm_yahei">
-    <div id="js_main" class="main">
+    <div id="js_main" class="main bg_2F1">
       <volist name="wap_home" id="item">
         <section class="common_section">
+          <span class="js_show_catalog show_catalog white_cata bg"></span>
           <img src=/{$item.img_url}>
-          <div class="text_introduce">
-            {$item.text_introduce}
+          <div class="text_introduce introduce_order_{$item.id}">
+            {$item.text_introduce}  
+          </div>
+          <span class="upto bg"></span>
+        </section> 
+      </volist>
+        <section class="common_section bg_2F1">
+          <span class="js_show_catalog show_catalog gray_cata bg"></span>
+          <div class="wap_trend">
+            {$trend_text.text}
+            <ul class="wap_trend_list">
+              <volist name="wap_trend" id="item" mod="2">
+                <eq name="mod" value="0"><li></eq>
+                  <div class="main_article js_article" ref_id={$item.id}>
+                    <img class="article_img" src="{$item.img_url}"/>
+                    <p class="aticle_sub_title">{$item.title}</p>
+                  </div>
+                <eq name="mod" value="1"></li></eq>
+              </volist>
+            </ul>
           </div>
         </section>
-      </volist>
+      <section class="common_section">
+          <span class="js_show_catalog show_catalog white_cata bg"></span>
+          <img src=/{$wap_about.img_url}>
+          <div class="text_introduce introduce_order_8">
+            {$wap_about.text_introduce}  
+          </div>
+          <span class="upto bg"></span>
+      </section> 
+      <section class="common_section bg_2F1">
+        <div class="contact">
+          <div class="contact_title_warp">
+            <h5 class="contact_title fm_yahei fl clearfix">Contact Us</h5>
+          </div>
+          <span class="db name cb base_item">
+            <span>姓名</span>
+            <input placeholder="NAME*" id="js_name">
+          </span>
+          <div class="contact_item_placeholder"></div>
+          <span class="db name base_item">
+            <span>邮箱</span>
+            <input placeholder="EMAIL*" id="js_email">
+          </span>
+          <div class="contact_item_placeholder"></div>
+          <textarea class="textarea db" id="js_content" placeholder="Write down what you want......"></textarea>
+          <div class="contact_item_placeholder_big"></div>
+          <a id="js_send" class="fr send bg"></a>
+          <div class="contact_item_placeholder_big cb"></div>
+          <ul class="contact_list">
+            <li>
+              <span class="addr bg logo"></span>
+              <span>{$cooperation.addr}</span>
+            </li>
+            <li>
+              <span class="phone bg logo"></span>
+              <span>{$cooperation.tel}</span>
+            </li>            
+            <li>
+              <span class="email bg logo"></span>
+              <span>{$cooperation.email}</span>
+            </li>
+          </ul>
+          <div class="catalog_footer">
+            <span class="share_qqweibo bg fl"></span>
+            <span class="share_weixin bg fl"></span>
+            <span class="share_xinlang bg fl"></span>
+            <div class="jiathis_style">
+                <span class="jiathis_txt"></span>
+                <a class=""></a>
+                <a class=""></a>
+                <a class=""></a>
+                <a class=""></a>
+                <a href="http://www.jiathis.com/share" class="jiathis share_jia jiathis_txt jtico_jiathis" target="_blank"></a>
+            </div>
+            <span class="goto_shop bg fr"></span>
+          </div>
+        </div>
+      </section>
     </div>
+    <div id="js_main_catalog" class="main_catalog dn bg_2F1">
+      <span id="js_close_catalog" class="close_catalog bg"></span>
+      <div class="logo_palceholder"></div>
+      <div class="logo bg"></div>
+      <div class="catalog_palceholder"></div>
+      <nav class="catalog" id="js_catalog_list">
+        <a class="catalog_item active" id="js_about_us_nav">我们 ABOUT US</a>
+        <a class="catalog_item" id="js_produce_nav">产品 PRODUCTS</a>
+        <a class="catalog_item" id="js_trend_nav">动态 COOPERATION</a>
+        <a class="catalog_item" id="js_coopertion_nav">合作 COOPERATION</a>
+      </nav>
+      <div class="catalog_footer">
+        <span class="share_qqweibo bg fl"></span>
+        <span class="share_weixin bg fl"></span>
+        <span class="share_xinlang bg fl"></span>
+        <div class="jiathis_style_wap">
+            <span class="jiathis_txt"></span>
+            <a class=""></a>
+            <a class=""></a>
+            <a class=""></a>
+            <a class=""></a>
+            <a href="http://www.jiathis.com/share" class="jiathis share_jia jiathis_txt jtico_jiathis" target="_blank"></a>
+        </div>
+        <a class="goto_shop bg fr" href={$shop.main_shop}></a>
+      </div>
+    </div>
+    <div id="js_main_trend" class="trend_main_detail dn bg_2F1">
+      <div class="text_introduce_placeholder">
+      </div>
+      <div class="text_content_main">
+        <p class="text_introduce_content_title c_93F fs28 fwb tac">
+          下午好的诞生故事
+        </p>
+        <p class="text_introduce_content_sub_title c_757 fs18 tac">
+          献给世界上最重要的人
+        </p>
+      </div>
+      <div class="trend_content">
+        <span class="trend_close fr bg" id="js_trend_close"></span>
+        <span class="trend_turn_left bg fl cb js_turn" dec="left"></span>
+        <div class="trend_main_content fl">
+          <img id="js_trend_img"/>
+          <div class="text fs14" id="js_trend_text">一度船只是创新型公司，一度船只是创新型公司，一度船只是创新型公司</div>
+        </div>
+        <span class="trend_turn_right bg fr js_turn" dec="right"></span>
+      </div>
+    </div>
+    <!-- JiaThis Button BEGIN -->
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
   </body>
 </html>
 
