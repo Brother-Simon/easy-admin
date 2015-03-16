@@ -11,9 +11,9 @@ class IndexController extends Controller {
      * @return
      */
     public function index(){
-      $this->assign("home_img_list",M("home_img","ea_")->field("img_url")->select());
+      $this->assign("home_img_list",M("home_img","ea_")->select());
       $this->assign("home_introd",M("home_introd","ea_")->field("introduce_text")->find());
-      $this->assign("produce_img",M("produce_img","ea_")->field("img_url")->select());
+      $this->assign("produce_img",M("produce_img","ea_")->select());
       $this->assign("happy_see",M("happy_see","ea_")->select());
       $this->assign("cooperation",M("cooperation","ea_")->find());
       $this->assign("happy_article",M("happy_article","ea_")->field("context,img_url")->find());

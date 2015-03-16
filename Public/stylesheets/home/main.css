@@ -40,6 +40,8 @@ and open the template in the editor.
   }
   .home_slider{
     height: 100%;
+    width: 100%;
+    overflow: hidden;
   }
   .home_slider img{
     height
@@ -100,13 +102,20 @@ and open the template in the editor.
     width: 100%;
     position: relative;
     overflow: hidden;
-    height: 800px;
+    height: 100%;
   }
   .produce_item{
     width: 10%;
+    height: 100%;
+    position: relative;
+  }
+  .produce_item img{
+    height: 100%;
+    width: 100%;
   }
   .produce_img_list{
     width: 1000%;
+    height:100%;
   }
   .goto_shop_list{
     position: absolute;
@@ -431,5 +440,71 @@ and open the template in the editor.
     width: 1578px;
     margin: 0 auto;
     padding-bottom: 60px;
+  }
+  .home_text_introduce{
+    height: 57%;
+  }
+  .big_title{
+    font-size: 70px;
+    text-align: center;
+    color: #fff;
+  }
+  .small_title{
+    font-size: 32px;
+    text-align:center;
+    color: #fff;
+  }
+  .home_img_list{
+    width: 1000%;
+    height: 100%;
+  }
+  .home_text_introduce{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+  }
+  .home_item{
+    height: 100%;
+    width: 10%;
+    position: relative;
+  }
+  .home_item img{
+    height: 100%;
+  }
+  .produce_order_1{
+    top: 30%;
+    left: 6.5%;
+  }
+  .text_introduce{
+    position: absolute;
+  }
+  .produce_order_1 .big_produce_title{
+    font-size: 50px;
+    line-height: 106px;
+    color: #286F37;
+    font-weight: bold;
+  }
+  .produce_order_1 .small_produce_title{
+    font-size: 23px;
+    line-height: 53px;
+    color: #5D5D5D;
+  }
+  .produce_order_2{
+    top: 40.5%;
+    left: 6.5%;
+  }
+  .text_introduce{
+    position: absolute;
+  }
+  .produce_order_2 .big_produce_title{
+    font-size: 50px;
+    line-height: 106px;
+    color: #286F37;
+    font-weight: bold;
+  }
+  .produce_order_2 .small_produce_title{
+    font-size: 23px;
+    line-height: 53px;
+    color: #5D5D5D;
   }
 }

@@ -27,13 +27,15 @@
     });
   };
   $(function(){
-    $("img").lazyload();
+    $(".js_load_img").lazyload();
     var WINDOW_HEIGHT = $(window).height();
     var NAV_HEIGHT = WINDOW_HEIGHT*0.05;
     var outTime,active_body=$("#js_main_body");
+    /*
     $("#js_home_slider").nivoSlider({
       controlNav : false
     });
+    */
     $("#js_home_slider img").each(function(){
       $(this).height($(this).height());
     });
@@ -62,6 +64,17 @@
       },3500);
     }
     scroll_animate();
+    //首页轮播图像
+    function home_scroll_animate(){
+      $("#home_img_list").animate({marginLeft:"-=100%"},500,"swing",function(){
+        $("#home_img_list").append($("#home_img_list li").eq(0).detach());
+        $("#home_img_list").css("marginLeft","0");
+      });
+      setTimeout(function(){
+        home_scroll_animate();
+      },3500);
+    }
+    home_scroll_animate();
     //产品
     /*
     $("#js_produce_img").mousewheel(function(event,delta){

@@ -22,9 +22,17 @@
     <div id="js_main_body" class="main_body">
       <div class="slider-wrapper theme-default">
         <div id="js_home_slider" class="home_slider">
-          <volist name="home_img_list" id="vo">
-            <img src=/{$vo.img_url} data-thumb=/{$vo.img_url} width="100%" height="100%">
-          </volist>
+          <ul id="home_img_list" class="home_img_list">
+            <volist name="home_img_list" id="vo">
+              <li  class="db fl home_item">
+                <img src=/{$vo.img_url} data-thumb=/{$vo.img_url} width="100%" height="100%">
+                <div class="home_text_introduce">
+                  <p class="big_title">{$vo.big_title}</p>
+                  <p class="small_title">{$vo.small_title}</p>
+                </div>
+              </li>
+            </volist>
+          </ul>
         </div>
       </div>  
       <div class="placeholder_box_introduce"></div>
@@ -48,7 +56,10 @@
         <ul id="produce_img_list" class="produce_img_list">
         <volist name="produce_img" id="vo" key="key">
               <li  class="db fl produce_item">
-                <img data-original=/{$vo.img_url} width="100%">
+                <img src=/{$vo.img_url} width="100%">
+                <div class="text_introduce produce_order_{$vo.id}">
+                  {$vo.text_introduce}
+                </div>
                 <ul class="goto_shop_list list_order_{$key}">
                   <li class="item fl">
                     <a class="bg taobao dib" href="{$shop.taobao}"  target="_blank"></a>
@@ -76,7 +87,7 @@
           <li class="fl js_happy_see_item" ref_id={$vo.id}>
             <dl class="">
               <dt>
-                <img data-original="/{$vo.img_url}"/>
+                <img data-original="/{$vo.img_url}" class="js_load_img"/>
               </dt>
               <dd>
                 {$vo.title}
